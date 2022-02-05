@@ -1,22 +1,25 @@
 @font-face {
-  font-family: 'ClockFont';
+  font-family: "ClockFont";
   src: url("../fonts/digital-7.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   background: #030303;
   height: 100vh;
+  display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
 .container {
+  display: -ms-grid;
   display: grid;
   place-items: center;
   background: #222;
@@ -48,9 +51,14 @@ body {
 
 .countdown_div {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 1rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -59,13 +67,15 @@ body {
   max-width: 160px;
 }
 
-
 .countdown_div div h3 {
-  font-family: 'ClockFont';
+  font-family: "ClockFont";
   font-size: 3rem;
   text-align: center;
   color: #0288d1;
   text-shadow: 0px 0px 4px #000000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -73,17 +83,16 @@ body {
   .container h2 {
     font-size: 1.2rem;
   }
-  
+
   .container p {
     font-size: 0.7rem;
   }
-  
+
   .countdown_div {
     gap: 1rem;
   }
-  
+
   .countdown_div div h3 {
     font-size: 2rem;
   }
-  
 }
