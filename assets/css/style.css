@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'ClockFont';
+  src: url("../fonts/digital-7.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #030303;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background: #222;
+  border-radius: 3px;
+  max-width: 38em;
+  padding: 1rem;
+  width: 97%;
+  font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+.container h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #969696;
+  text-shadow: 1px 3px 0 #000;
+}
+
+.container p {
+  text-align: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #0288d1;
+  text-shadow: 1px 1.5px 0 #000;
+}
+
+.countdown_div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.countdown_div div {
+  min-width: 130px;
+  max-width: 160px;
+}
+
+
+.countdown_div div h3 {
+  font-family: 'ClockFont';
+  font-size: 3rem;
+  text-align: center;
+  color: #0288d1;
+  text-shadow: 0px 0px 4px #000000;
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container h2 {
+    font-size: 1.2rem;
+  }
+  
+  .container p {
+    font-size: 0.7rem;
+  }
+  
+  .countdown_div {
+    gap: 1rem;
+  }
+  
+  .countdown_div div h3 {
+    font-size: 2rem;
+  }
+  
+}
