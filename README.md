@@ -1,4 +1,4 @@
-## Simple JavaScript Countdown
+## Contador-Regressivo-JS
 
 <br />
 
