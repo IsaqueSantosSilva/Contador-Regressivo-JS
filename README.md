@@ -2,7 +2,7 @@
 
 <br />
 
-Protótipo: 
+Protótipo: https://isaquesantossilva.github.io/Contador-Regressivo-JS/
 
 <br />
 
